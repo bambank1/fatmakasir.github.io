@@ -1,0 +1,15 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/$1 [L,QSA]
+
+RewriteCond %{REQUEST_URI} !\.(?:zip|css|js|jpg|jpeg|png|gif|eot|ttf|woff|woff2|svg|ico|json)$ [NC]
+RewriteRule ^assets/ - [L,F]
+RewriteCond %{REQUEST_URI} !\.(?:zip)$ [NC]
+RewriteRule ^backup_db/ - [L,F]
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpg|jpeg|png|gif|svg|ico)$ [NC]
+RewriteRule ^uploads/ - [L,F]
+ 

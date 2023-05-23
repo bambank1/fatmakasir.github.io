@@ -1,0 +1,3 @@
+[2023-05-09T03:13:42.920414+00:00] default.NOTICE: Memeriksa pembaruan baru... [] []
+[2023-05-09T03:13:42.927663+00:00] default.DEBUG: Dapatkan pembaruan baru dari https://mywidget.github.io/update/update_kasir.json [] []
+[2023-05-09T03:13:43.258590+00:00] default.DEBUG: Tidak ada versi baru yang tersedia [] []
